@@ -1,6 +1,7 @@
 package com.fskj.recyclerviewdemo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
@@ -44,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(int position) {
                 Snackbar.make(coordinatorLayout,"第"+position+"项被点击了",Snackbar.LENGTH_SHORT).show();
+                if (position == 0) {
+                    startActivity(new Intent(MainActivity.this,AddheaderRvActivity.class));
+                }
             }
         });
         //长按事件

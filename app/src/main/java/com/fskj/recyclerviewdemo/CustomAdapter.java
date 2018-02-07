@@ -15,7 +15,7 @@ import java.util.List;
  * desc:
  */
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder>{
+public class CustomAdapter extends WrapRecyclerView.Adapter<CustomAdapter.ViewHolder>{
     private Context context;
     private List<String> dataList;
     private LayoutInflater inflater;
